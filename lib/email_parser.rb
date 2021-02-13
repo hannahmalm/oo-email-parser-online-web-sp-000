@@ -17,8 +17,8 @@ class EmailAddressParser
 
     #Begin parsing using a CLASS method - the CLASS is responsible for parsing, not each individual instance email 
     def parse
+      #this regex is from google
       @emailparse.split(/,?\s/).uniq
-
     end 
 end 
 end 
