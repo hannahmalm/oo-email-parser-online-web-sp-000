@@ -20,7 +20,7 @@ class EmailAddressParser
       #this regex is from google
       @emailparse.split(/,?\s/).uniq
     end 
-end 
+
 end 
 
 
