@@ -17,16 +17,22 @@ class EmailAddressParser
 
     #Begin parsing using a CLASS method - the CLASS is responsible for parsing, not each individual instance email 
     def parse
-          #split the CSV data into an array of individual rows
-      rows = @emails.split('\n')
-          #for each row, collect an email instance based on the data
-      emails = rows.collect do |row|
-          #split the row using CSV OR Whitespace “,”
-      data = @emails.split("/,/") || @emails.split(" ").collect {|i| i}.join("")
-      # #I want to iterate over the list of email_addresses and return only unique emails 
-       @emails.to_a.uniq { |email_addresses| email_addresses[:emails] }
+      
 
     end 
 end 
 end 
+
+
+
+
+
+#     #split the CSV data into an array of individual rows
+      # rows = @emails.split('\n')
+      #     #for each row, collect an email instance based on the data
+      # emails = rows.collect do |row|
+      #     #split the row using CSV OR Whitespace “,”
+      # data = @emails.split("/,/") || @emails.split(" ").collect {|i| i}.join("")
+      # # #I want to iterate over the list of email_addresses and return only unique emails 
+      # @emails.to_a.uniq { |email_addresses| email_addresses[:emails] }
 
