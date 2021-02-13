@@ -8,9 +8,8 @@ require 'pry'
 class EmailAddressParser
    attr_accessor :emailparse 
    
-   #:emails is the same thing as @emails 
-   #initialize after each email is added to the list 
-   #email_addresses is the list of data in the csv 
+   #:emailparse is the same thing as @emailparse
+   #initialize after each email is added to the list
     def initialize(emailparse)
       @emailparse = emailparse
     end 
