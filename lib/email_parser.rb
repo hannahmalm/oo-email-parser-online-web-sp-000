@@ -6,15 +6,13 @@ require 'pry'
 #the class is what is responsible for the parsing - develop a class parser method 
 
 class EmailAddressParser
-  #create an array to hold the list of emails in the files
-   email_list = []
    attr_accessor :emailparse 
    
    #:emails is the same thing as @emails 
    #initialize after each email is added to the list 
    #email_addresses is the list of data in the csv 
-    def initialize(email_addresses)
-      @emails = email_addresses
+    def initialize(emailparse)
+      @emailparse = emailparse
     end 
 
     #Begin parsing using a CLASS method - the CLASS is responsible for parsing, not each individual instance email 
