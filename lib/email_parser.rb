@@ -8,7 +8,7 @@ require 'pry'
 class EmailAddressParser
   #create an array to hold the list of emails in the files
    email_list = []
-   attr_accessor :emails
+   attr_accessor :emailparse 
    
    #:emails is the same thing as @emails 
    #initialize after each email is added to the list 
